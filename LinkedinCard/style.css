@@ -1,0 +1,213 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #2d2d2d;
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+#feed{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#feed button{
+    outline: none;
+    font-family: monospace;
+    background-color: #fff;
+    padding: 8px 10px;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.6);
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#feed button:hover{
+    background-color: #d3d3d3;
+    border-radius: 5px;
+}
+
+#feed button:first-child{
+    border-bottom-left-radius: 5px;
+}
+
+#feed button:last-child{
+    border-bottom-right-radius: 5px;
+}
+
+.card_con{
+    width: 450px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#card_head{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    vertical-align: start;
+    justify-content: space-between;
+}
+
+#card_head div{
+    display: flex;
+    align-items: start !important; 
+    align-content: center;
+    gap: 0.3em;
+}
+
+#card_head input:first-child{
+    width: 2.8em;
+    height: 2.8em;
+    border: none;
+}
+
+#card_head input:last-child{
+    width: 1.2em;
+    height: 1.2em;
+    border: none;
+}
+
+#person_liked{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-family: sans-serif;
+}
+
+#person_liked a{
+    text-decoration: none;
+    font-size: 0.8em;
+    color: rgb(65, 65, 65);
+    margin-left: 0.5em;
+    font-weight: 600;
+}
+
+#person_liked a:hover{
+    text-decoration: underline;
+    color: rgb(0, 86, 120);
+}
+
+#person_liked span{
+    font-size: 0.7em;
+    color: grey;
+}
+
+#other_feature{
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+#person_liked img{
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+}
+
+#card_head input:first-child:hover{
+    border-radius: 100%;
+    background-color: #d3d3d3;
+}
+
+#card_head input:last-child:hover{
+    border-radius: 100%;
+    background-color: #d3d3d3;
+}
+
+.line{
+    border: 1px solid rgb(228, 228, 228);
+}
+
+#user_info{
+    display: flex;
+    padding: 12px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.about_user{
+    display: flex;
+}
+.about_user img{
+    width: 3em;
+    height: 3em;    
+    border-radius: 100%;
+}
+.about_user a{
+    font-weight: 600;
+    color: #2d2d2d;
+    text-decoration: none;
+}
+.about_user a:hover{
+    color: rgb(0, 86, 120);
+}
+.about_user div * {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    margin-left: 0.5em;
+}
+
+.about_user div:not(:first-child) {
+    color: grey;
+}
+
+#user_info button{
+    background-color: transparent;
+    border: none;
+    /* font-weight: 600; */
+    color: rgb(0, 86, 120);
+    font-size: 1em;
+}
+
+#card_post *{
+    margin: 0;
+    font-size: 0.87em;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: #525252;
+}
+
+#likes_comm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#likes_comm div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+
+#likes_comm div p{
+    font-family: sans-serif;
+    font-size: 0.7em;
+    color: grey;
+    margin-left: 0.3em;
+}
+
+#likes_comm p:last-child{
+    font-family: sans-serif;
+    font-size: 0.7em;
+    color: grey;
+}
